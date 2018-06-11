@@ -1,5 +1,5 @@
 ActiveAdmin.register User do
-	permit_params :name, :email, :phone_no, :city, :country, :role
+	permit_params :name, :email, :phone_no, :city, :role
 	filter :role
 	# filter :role_contains
 

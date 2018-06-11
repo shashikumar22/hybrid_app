@@ -8,7 +8,8 @@ User.destroy_all
   	name: user_name,
   	email: Faker::Internet.unique.safe_email(user_name), 
   	phone_no: Faker::PhoneNumber.cell_phone, 
-  	city: Faker::Address.city, 
+  	city: Faker::Address.city,
+  	country: Faker::Address.country, 
   	role: role
   )                      
 end
