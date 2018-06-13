@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180611084926) do
+ActiveRecord::Schema.define(version: 20180611120559) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,8 +62,8 @@ ActiveRecord::Schema.define(version: 20180611084926) do
     t.datetime "updated_at", null: false
     t.string "phone_no"
     t.string "city"
-    t.string "country"
-    t.string "role"
+    t.string "gender"
+    t.string "favorite_colors", default: [], array: true
   end
 
   add_foreign_key "posts", "users"
